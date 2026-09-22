@@ -80,3 +80,12 @@ print("Degree\tTraining MSE\tTest MSE")
 
 for degree, train_mse, test_mse in results:
     print(f"{degree}\t{train_mse:.4f}\t\t{test_mse:.4f}")
+
+
+
+# Degree	 Behavior	       Reason
+# ===============================================================================================================================================
+# 1	         Underfitting	   A straight line is too simple to capture the curved sine relationship. Both training and test errors are relatively high.
+# 4	         Good fit	       Degree 4 is flexible enough to capture the main sinusoidal pattern without excessively fitting the random noise.
+# 15	     Overfitting	   The high-degree polynomial has enough flexibility to closely fit the 25 training points, including noise. Training MSE becomes 
+#                               very small, while test MSE generally increases.
