@@ -1,4 +1,27 @@
 # ML-Zero-to-Advanced 🤖
+UPDATES
+### 05. Supervised Learning
+
+* Linear Regression
+* Logistic Regression
+* K-Nearest Neighbors
+* Naive Bayes
+* **Decision Trees** 🌲
+  * **Core Concept: Entropy ($H(S)$)**
+    * Measures the impurity, disorder, or uncertainty within a dataset subset.
+    * Calculated using Shannon Entropy: 
+      $$H(S) = -\sum_{i=1}^{c} p(i) \log_2 p(i)$$
+    * *Entropy = 0:* Perfectly pure node (all samples belong to one class).
+    * *Entropy = 1:* Perfectly mixed node (maximum uncertainty in binary classes).
+  * **ID3 Algorithm & Information Gain ($IG$)**
+    * Calculates the reduction in entropy after splitting the data by a specific feature ($A$).
+    * Uses pure Information Gain to pick the best split:
+      $$IG(S, A) = H(S) - \sum_{v \in Values(A)} \frac{|S_v|}{|S|} H(S_v)$$
+    * *Note:* Naturally biased toward features with many unique values (e.g., IDs), which C4.5 addresses later using Gain Ratio.
+* Support Vector Machines
+* Random Forest
+* Ensemble Methods
+
 
 My journey of learning **Machine Learning from the fundamentals to advanced concepts**.
 
